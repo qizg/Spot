@@ -6,5 +6,11 @@
 
     <color name="main_color">#303F9F</color>
     <color name="line_gray">#DBDBDB</color>
+
+    <color name="text_gray3">#333333</color>
+    <color name="text_gray6">#666666</color>
+    <color name="text_gray9">#999999</color>
+    <color name="text_grayB0">#B0B0B0</color>
+    <color name="text_grayE0">#E0E0E0</color>
     <color name="main_bg">#2BB3D5</color>
 </resources>
