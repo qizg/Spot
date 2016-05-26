@@ -37,21 +37,24 @@ public class MainActivity extends AppCompatActivity implements TabHost.OnTabChan
 
         mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
         mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
-        mTabHost.addTab(
-                mTabHost.newTabSpec(ACCOUNT_TAG).setIndicator(
-                        getTabItem(R.drawable.account_tab_selector, getString(R.string.account))),
-                AccountFragment.class, null);
-        mTabHost.addTab(
-                mTabHost.newTabSpec(PROOF_TAG).setIndicator(
-                        getTabItem(R.drawable.proof_tab_selector,
-                                getString(R.string.proof))),
-                ProofFragment.class, null);
+
         mTabHost.addTab(
                 mTabHost.newTabSpec(APPROVAL_TAG).setIndicator(
                         getTabItem(R.drawable.approval_tab_selector,
                                 getString(R.string.approval))),
                 ApprovalFragment.class, null);
 
+        mTabHost.addTab(
+                mTabHost.newTabSpec(PROOF_TAG).setIndicator(
+                        getTabItem(R.drawable.proof_tab_selector,
+                                getString(R.string.proof))),
+                ProofFragment.class, null);
+
+        mTabHost.addTab(
+                mTabHost.newTabSpec(ACCOUNT_TAG).setIndicator(
+                        getTabItem(R.drawable.account_tab_selector,
+                                getString(R.string.account))),
+                AccountFragment.class, null);
 
         mTabHost.setOnTabChangedListener(this);
     }
