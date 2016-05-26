@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gra_shape"
+    android:background="@drawable/log_bg"
     android:orientation="vertical"
     tools:context="com.spot.app.activity.LoginActivity">
 
@@ -26,17 +26,11 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal">
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/user_name" />
-
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:background="@null"
+                android:background="@drawable/edit_shape"
                 android:hint="手机号"
                 android:padding="5dp"
                 android:inputType="phone"

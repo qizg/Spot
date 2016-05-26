@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import com.spot.app.activity.HomeActivity;
 import com.spot.app.activity.LoginActivity;
 import com.spot.app.activity.MainActivity;
 import com.spot.app.config.Constant;
@@ -25,11 +24,10 @@ public class WelcomeActivity extends Activity {
 
         boolean isLogin = sp_Info.getBoolean(Constant.IS_LOGIN, false);
 
-//        if (!isLogin)
-//            startActivity(new Intent(this, LoginActivity.class));
+    //    if (!isLogin)
+           // startActivity(new Intent(this, LoginActivity.class));
 //        else
-            startActivity(new Intent(this, HomeActivity.class));
+          startActivity(new Intent(this, MainActivity.class));
 
-        finish();
     }
 }
