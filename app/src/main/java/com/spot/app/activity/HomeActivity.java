@@ -1,5 +1,6 @@
 package com.spot.app.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -24,6 +25,7 @@ import com.spot.app.R;
 import com.spot.app.fragment.AccountFragment;
 import com.spot.app.fragment.ApprovalFragment;
 import com.spot.app.fragment.ProofFragment;
+import com.spot.app.utils.FetchImageUtilsCrop;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, TabHost.OnTabChangeListener {
@@ -169,5 +171,17 @@ public class HomeActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private FetchImageUtilsCrop imageUtils = new FetchImageUtilsCrop(this);
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        imageUtils.onActivityResult(requestCode, resultCode, data);
+    }
+
+    public FetchImageUtilsCrop getImageUtils() {
+        return imageUtils;
     }
 }
