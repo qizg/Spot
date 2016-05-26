@@ -5,7 +5,9 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="main_color">#0FA3F9</color>
-    <color name="line_gray">#DBDBDB</color>
+    <color name="line_gray">#D9D9D9</color>
+
+    <color name="gray_bg">#EEEEEE</color>
 
     <color name="text_gray3">#333333</color>
     <color name="text_gray6">#666666</color>
