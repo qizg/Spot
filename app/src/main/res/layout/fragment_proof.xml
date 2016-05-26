@@ -6,12 +6,14 @@
     android:orientation="vertical">
 
     <FrameLayout
+        android:id="@+id/proof_check_photo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@android:color/white">
 
         <ImageView
+            android:id="@+id/proof_iv_photo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"/>
@@ -49,10 +51,12 @@
             android:textSize="16sp"/>
 
         <EditText
+            android:id="@+id/proof_et_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:padding="8dp"
+            android:inputType="text"
             android:background="@drawable/shape_edit_bg"/>
 
         <TextView
@@ -63,16 +67,19 @@
             android:textSize="16sp"/>
 
         <EditText
+            android:id="@+id/proof_et_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="top|left"
-            android:minLines="5"
-            android:maxLines="5"
+            android:minLines="6"
+            android:inputType="textMultiLine"
+            android:maxLines="6"
             android:padding="8dp"
             android:background="@drawable/shape_edit_bg"/>
 
         <Button
+            android:id="@+id/proof_btn_save"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:text="保存"
@@ -83,8 +90,5 @@
             android:layout_gravity="center"/>
 
     </LinearLayout>
-
-
-
 
 </LinearLayout>
