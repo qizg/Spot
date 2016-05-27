@@ -24,10 +24,10 @@ public class WelcomeActivity extends Activity {
 
         boolean isLogin = sp_Info.getBoolean(Constant.IS_LOGIN, false);
 
-    //    if (!isLogin)
-           // startActivity(new Intent(this, LoginActivity.class));
+//        if (!isLogin)
+            startActivity(new Intent(this, LoginActivity.class));
 //        else
-          startActivity(new Intent(this, MainActivity.class));
+//            startActivity(new Intent(this, MainActivity.class));
 
     }
 }
