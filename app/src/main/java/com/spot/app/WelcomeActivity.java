@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.spot.app.activity.LoginActivity;
-import com.spot.app.activity.MainActivity;
+
 import com.spot.app.config.Constant;
 
 public class WelcomeActivity extends Activity {
