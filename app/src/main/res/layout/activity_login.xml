@@ -12,77 +12,72 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:scaleType="center"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@null"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
+        android:weightSum="6"
         android:padding="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:gravity="center_horizontal">
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/edit_shape"
-                android:hint="手机号"
-                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape_login_btn"
+                android:hint="用户名"
+                android:paddingLeft="20dp"
                 android:inputType="phone"
                 android:textColor="@android:color/white"
                 android:textColorHint="@color/text_grayE0" />
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/line_gray" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginTop="20dp"
+            android:layout_weight="1"
             android:gravity="center_horizontal">
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/password" />
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@null"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_login_btn"
                 android:hint="密码"
-                android:layout_marginLeft="10dp"
-                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:paddingLeft="20dp"
                 android:inputType="textPassword"
                 android:textColor="@android:color/white"
                 android:textColorHint="@color/text_grayE0" />
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/line_gray" />
-
         <Button
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="登录"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="立即登录"
             android:gravity="center"
             android:textColor="@android:color/white"
             android:layout_marginTop="20dp"
-            android:background="@drawable/shape_login_btn"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="25dp"
+            android:background="@drawable/login_07"/>
 
     </LinearLayout>
-    
+
 </LinearLayout>
