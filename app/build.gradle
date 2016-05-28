@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.spot.app"
-        minSdkVersion 9
+        minSdkVersion 10
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -25,4 +25,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.android.support:support-v4:23.2.1'
     compile 'com.android.support:design:23.2.1'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    compile project(path: ':RefreshRecyclerLibrary')
 }
