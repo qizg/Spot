@@ -1,6 +1,7 @@
 package com.spot.app.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -14,6 +15,7 @@ import android.widget.RadioGroup;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.spot.app.R;
+import com.spot.app.activity.ApprovalDetailsActivity;
 import com.spot.app.fragment.dummy.DummyContent;
 
 /**
@@ -107,6 +109,6 @@ public class ApprovalFragment extends Fragment implements RadioGroup.OnCheckedCh
     @Override
     public void onListFragmentInteraction(DummyContent.DummyItem item) {
 
-
+        startActivity(new Intent(getContext(), ApprovalDetailsActivity.class));
     }
 }
