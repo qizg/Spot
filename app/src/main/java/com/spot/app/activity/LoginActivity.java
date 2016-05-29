@@ -9,6 +9,7 @@ import android.widget.Button;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.spot.app.R;
+import com.spot.app.WelcomeActivity;
 
 public class LoginActivity extends Activity {
 
@@ -24,7 +25,7 @@ public class LoginActivity extends Activity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this,ApprovalDetailsActivity.class));
+                startActivity(new Intent(LoginActivity.this,WelcomeActivity.class));
             }
         });
     }
