@@ -4,6 +4,7 @@
     <string name="account">个人中心</string>
     <string name="proof">施工现场</string>
     <string name="approval">审批</string>
+    <string name="update_pwd">修改密码</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

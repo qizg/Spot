@@ -7,41 +7,46 @@
     android:background="#F7F7F7"
     tools:context="com.spot.app.activity.UpdatePwdActivity">
 
+    <android.support.design.widget.AppBarLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="输入原始密码"
-
+android:paddingLeft="10dp"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="#FFFFFF"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/line_gray"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:background="@drawable/shape_ring_half_rec_gray_top"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="输入新密码"
+        android:paddingLeft="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="#FFFFFF"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/line_gray"/>
+        android:background="@drawable/shape_half_rec_gray"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="重复新密码"
+        android:paddingLeft="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="#FFFFFF"/>
+        android:background="@drawable/shape_ring_half_rec_gray_bottom"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -53,6 +58,7 @@
             android:background="@drawable/up_pwd_05"
             android:gravity="center"
             android:layout_margin="20dp"
+            android:textColor="@android:color/white"
             android:text="确定"/>
         <TextView
             android:layout_width="wrap_content"
@@ -61,6 +67,7 @@
             android:layout_margin="20dp"
             android:background="@drawable/up_pwd_03"
             android:text="重置"
+            android:textColor="@android:color/white"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"/>
